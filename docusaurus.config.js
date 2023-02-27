@@ -141,9 +141,9 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       algolia: {
-        appId: 'N1ZOY7XK8O',
-        apiKey: 'c4dcc787befab120e979bac1ac182eff',
-        indexName: 'agiledocs',
+        appId: '',
+        apiKey: '',
+        indexName: '',
         contextualSearch: true,
       },
     }),
