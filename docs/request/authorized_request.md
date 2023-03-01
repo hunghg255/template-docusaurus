@@ -7,8 +7,8 @@ sidebar_position: 3
 
 ```mermaid
 sequenceDiagram
-    PrivateRequest->>TokeManager: GetToken
-    TokeManager-->>PrivateRequest: Token
+    PrivateRequest->>TokenManager: GetToken
+    TokenManager-->>PrivateRequest: Token
     PrivateRequest->>Server: This is the token, show me the result
 ```
 
