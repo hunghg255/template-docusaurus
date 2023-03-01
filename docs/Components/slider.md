@@ -1,6 +1,6 @@
 ---
-title: Intro
-sidebar_position: 1
+title: Slider
+sidebar_position: 3
 ---
 
 # Typography

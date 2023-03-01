@@ -1,5 +1,5 @@
 ---
-title: Intro
+title: Box
 sidebar_position: 1
 ---
 
@@ -8,3 +8,7 @@ sidebar_position: 1
 ```SnackPlayer name=@couldy/example
 
 ```
+
+## Background
+
+### 1234

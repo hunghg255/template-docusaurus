@@ -40,7 +40,7 @@ const processNode = (node, parent) => {
             type: 'CODE',
             contents: node.value,
           },
-        })
+        }),
       );
       const dependencies = params.dependencies || '';
       const platform = params.platform || 'web';
@@ -55,6 +55,7 @@ const processNode = (node, parent) => {
         value: dedent`
           <div
             class="snack-player"
+            data-snack-id="${name}"
             data-snack-name="${name}"
             data-snack-description="${description}"
             data-snack-files="${files}"

@@ -1,6 +1,6 @@
 ---
-title: Intro
-sidebar_position: 1
+title: Select
+sidebar_position: 3
 ---
 
 # Typography
