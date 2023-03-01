@@ -1,10 +1,10 @@
 ---
-title: Intro
+title: Introduction
 sidebar_position: 1
 ---
 
-# Typography
+# Introduction
 
-```SnackPlayer name=@couldy/example
+This is the document for React Native Developer
 
-```
+Contains sample code for handling common workflow, rules, api call, sample code structure of a react native project.
