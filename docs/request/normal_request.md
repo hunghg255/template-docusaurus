@@ -3,16 +3,6 @@ title: Normal Request
 sidebar_position: 2
 ---
 
-# Typography
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
 ## Table
 
 | Element | Attribute                                                                      |

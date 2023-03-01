@@ -5,6 +5,6 @@ sidebar_position: 2
 
 # Typography
 
-```SnackPlayer name=@couldy/example
+```SnackPlayer name=@couldy/private-request-and-refresh-token
 
 ```
