@@ -7,7 +7,11 @@ const SnackPlayer = require('./remark-snackplayer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Agiledocs',
+  themes: ['@docusaurus/theme-mermaid'],
+  markdown: {
+    mermaid: true,
+  },
+  title: 'Agiletech ReactNative',
   favicon: 'img/favicon.ico',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -75,7 +79,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Agiledocs',
+        title: 'Agile React Native',
         logo: {
           alt: 'My Site Logo',
           src: 'https://avatars.githubusercontent.com/u/44864544?s=200&v=4',
@@ -84,7 +88,7 @@ const config = {
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
+            position: 'right',
             label: 'Documentation',
           },
           // { to: '/blog', label: 'Blog', position: 'left' },
@@ -134,18 +138,18 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Agiledocs`,
+        copyright: `Copyright © ${new Date().getFullYear()} Agiletech ReactNative Docs`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      algolia: {
-        appId: '',
-        apiKey: '',
-        indexName: '',
-        contextualSearch: true,
-      },
+      // algolia: {
+      //   appId: '',
+      //   apiKey: '',
+      //   indexName: '',
+      //   contextualSearch: true,
+      // },
     }),
 };
 

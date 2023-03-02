@@ -1,22 +1,10 @@
 ---
+title: Introduction
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-- Hello
+This is the document for React Native Developer
 
-```SnackPlayer name=Hello%20World
-import React from 'react';
-import { Text, View } from 'react-native';
-
-const YourApp = () => {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Try editing me! 🎉</Text>
-    </View>
-  );
-}
-
-export default YourApp;
-```
+Contains sample code for handling common workflow, rules, api call, sample code structure of a react native project.
