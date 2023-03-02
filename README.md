@@ -22,20 +22,66 @@ This command starts a local development server and opens up a browser window. Mo
 $ yarn build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+# Write markdown
 
-### Deployment
+## Embed Expo
 
-Using SSH:
+````
+```SnackPlayer name=Hello%20World
+import React from 'react';
+import { Text, View } from 'react-native';
+
+const YourApp = () => {
+  return (
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Text>Try editing me! 🎉</Text>
+    </View>
+  );
+}
+
+export default YourApp;```
+
+````
+
+## Embed StackBlitz
 
 ```
-$ USE_SSH=true yarn deploy
+<stackblitz name={'react-ts-mdxcmx'} />
 ```
 
-Not using SSH:
+## Live code: Add block with keywork live
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+````
+```tsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    var timerID = setInterval(() => tick(), 1000);
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}```
+````
+
+## Mermaid: add block with keyword mermaid
+
+````
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;```
+````
