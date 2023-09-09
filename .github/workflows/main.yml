@@ -7,15 +7,27 @@ on:
   pull_request:
     branches:
       - master
-
 jobs:
   build:
+    name: build-app
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Install bun
+        uses: oven-sh/setup-bun@v1
+      - name: Install dependencies
+        run: bun install
+      - name: Build app
+        run: bun run build
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - uses: actions/setup-node@v3
+#         with:
+#           node-version: 18.x
 
-      - run: npm install
-      - run: npm run lint && npm run build
+#       - run: npm install
+#       - run: npm run lint && npm run build
