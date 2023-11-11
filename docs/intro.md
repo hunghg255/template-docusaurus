@@ -21,7 +21,7 @@ export default YourApp;
 
 # Stackblitz
 
-<stackblitz name={'react-ts-mdxcmx'} />
+<Stackblitz name={'react-ts-mdxcmx'} />
 
 # Mermaid Diagram
 
